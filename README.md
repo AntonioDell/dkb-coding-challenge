@@ -13,7 +13,9 @@ The devcontainer setup will enable you to have the exact development environment
 
 ## Manual Setup
 
-Make sure to install the dependencies:
+Install [pnpm](https://pnpm.io/installation).
+
+Install the dependencies:
 
 ```bash
 # pnpm
@@ -43,3 +45,11 @@ pnpm preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+## Testing
+
+Run the unit tests:
+
+```bash
+pnpm test
+```
