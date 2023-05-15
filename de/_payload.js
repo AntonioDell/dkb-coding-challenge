@@ -1,0 +1,1 @@
+export default {data:{LJjrcZr9n9:[{id:"lkmfkl-mlfkm-dlkfm",description:"Private Card"},{id:"elek-n3lk-4m3lk4",description:"Business Card"}]},prerenderedAt:1684133852146}
