@@ -1,0 +1,37 @@
+{
+  "name": "DKB Coding Challenge",
+  "dockerComposeFile": ["docker-compose.yml"],
+  "service": "devcontainer",
+  "remoteUser": "node",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "Prisma.prisma",
+        "Vue.volar",
+        "adam-bender.commit-message-editor",
+        "vinliao.fast-arrow",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "wayou.vscode-todo-highlight",
+        "eamodio.gitlens",
+        "shakram02.bash-beautify",
+        "hollowtree.vue-snippets",
+        "yoavbls.pretty-ts-errors",
+        "bierner.emojisense",
+        "lokalise.i18n-ally"
+      ]
+    }
+  },
+  "forwardPorts": [9000],
+  "portsAttributes": {
+    "9000": {
+      "label": "App",
+      "onAutoForward": "notify",
+      "requireLocalPort": true
+    }
+  },
+  "postStartCommand": "/bin/bash -c './.devcontainer/postStart.sh'"
+}

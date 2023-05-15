@@ -1,0 +1,29 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.0",
+    "@nuxt/test-utils": "^3.4.3",
+    "@nuxtjs/i18n-edge": "8.0.0-beta.12-28065601.76e2626",
+    "@types/node": "^18",
+    "@vue/test-utils": "^2.3.2",
+    "autoprefixer": "^10.4.14",
+    "jsdom": "^22.0.0",
+    "nuxt": "^3.4.3",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2",
+    "vitest": "^0.31.0"
+  },
+  "dependencies": {
+    "@vueuse/core": "^10.1.2"
+  }
+}

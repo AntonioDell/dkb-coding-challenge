@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container {
+  @apply flex gap-8 flex-col justify-center max-w-xl pb-4;
+  max-height: calc(100vh - 4rem);
+}

@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  devcontainer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/workspace:cached
+    command: sleep infinity
+    environment:
+      - HOST_HOME="${HOME}"
