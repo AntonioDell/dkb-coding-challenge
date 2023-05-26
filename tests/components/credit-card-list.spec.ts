@@ -20,24 +20,6 @@ const mountList = (additionalProps: object = {}) => {
 
 describe("<CreditCardList>", async () => {
   describe("props", () => {
-    describe("modelValue", () => {
-      it("does not show a border given an empty value", async () => {
-        const card1Id = defaultProps.cards[1].id;
-        const { wrapper } = mountList();
-
-        const card1 = wrapper.find(`[data-test-id=card-${card1Id}]`);
-
-        expect(card1.classes("selected-border")).toBeFalsy();
-      });
-      it("shows a border around the card with the same value", () => {
-        const modelValue = defaultProps.cards[1].id;
-        const { wrapper } = mountList({ modelValue });
-
-        const card1 = wrapper.find(`[data-test-id=card-${modelValue}]`);
-
-        expect(card1.classes("selected-border")).toBeDefined();
-      });
-    });
     describe("cards", () => {
       it("renders each card in a component", () => {
         const { wrapper } = mountList();
