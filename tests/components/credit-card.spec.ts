@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
 import CreditCard from "../../components/credit-card.vue";
-import { mount } from "@vue/test-utils";
+import { flushPromises, mount } from "@vue/test-utils";
 import { faker } from "@faker-js/faker";
 
 /* TODO: This mock should be done in a more centralized way. */
@@ -47,8 +47,7 @@ describe("<CreditCard>", () => {
         const color = "blue";
         const { wrapper } = mountCard({ color });
 
-        const styles = getComputedStyle(wrapper.element);
-        expect(styles.backgroundColor).toBe(color);
+        expect(wrapper.element.innerHTML).toContain("background-color: blue");
       });
     });
   });
